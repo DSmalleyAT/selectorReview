@@ -30,6 +30,12 @@ class FormPage extends Page {
     async email() {
         await this.inputEmail.setValue(input);
         await this.submit.click();
+    
+    }
+
+    //Backender Selector
+    get interest() {
+        return $('#title option:nth-child(3)');
     }
 
     /**
